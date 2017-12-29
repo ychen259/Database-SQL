@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/20/e9/95/20e995b3230740e1051c509c12a01f3d.jpg");
+    background-size: 1600px 800px;
+    background-repeat: no-repeat;
+}
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+#out{
+    position: absolute;
+    right: 20px;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>Stock</h1>
+</div>
+<div id = "out">
+<a href="http://localhost/DB%20UI/login.html"><strong>Log out </strong></a>
+</div>
+<ul>
+  <li><a href="http://localhost/DB%20UI/main.html"><strong style="font-size:20px">Main</strong></a></li>  
+  <li><a href="http://localhost/DB%20UI/return.html">Net Return on Investment</a></li>
+  <li><a href="http://localhost/DB%20UI/riskstock.html">Risk Stock</a></li>
+  <li><a href="http://localhost/DB%20UI/stablestock.html">Stable Stock</a></li>
+  <li><a href="http://localhost/DB%20UI/highestvolume.html">Highest Volume Date</a></li>
+  <li><a href="http://localhost/DB%20UI/company.html">Stock Company Info</a></li> 
+</ul>
+
+<!****************************************************>
+<?php
+  $company_array = array(ss, b, c);
+  $ticker = array(aa, bb, cc);
+  $std = array("1", "1", "1"); 
+
+?>
+<!****************************************************>
+<font color = "white">
+<strong style="font-size:40px">Top 10 Stable Stock </strong>
+<table style = "width: 100%">
+  <tr>
+    <th>Company name</th>
+    <th>Ticker</th>
+    <th>Standard Deviation</th>
+  </tr>
+  <tr>
+    <td><?php echo "$company_array[0]"; ?>
+    <td><?php echo "$ticker[0]"; ?>
+   <td><?php echo "$std[0]"; ?>
+  </tr>
+  <tr>
+    <td><?php echo "$company_array[1]"; ?>
+    <td><?php echo "$ticker[1]"; ?>
+   <td><?php echo "$std[1]"; ?>
+  </tr>
+  <tr>
+    <td><?php echo "$company_array[2]"; ?>
+    <td><?php echo "$ticker[2]"; ?>
+   <td><?php echo "$std[2]"; ?>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/20/e9/95/20e995b3230740e1051c509c12a01f3d.jpg");
+    background-size: 1600px 800px;
+    background-repeat: no-repeat;
+}
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+#section {
+    width:350px;
+    padding:10px;
+    position: absolute;
+    left: 700px;	
+    top: 250px; 	 
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+}
+#out{
+    position: absolute;
+    right: 20px;
+}
+</style>
+</head>
+<body>
+
+<!****************************************************>
+<?php
+  $company_array = array(ss, b, c);
+  $start = array(aa, bb, cc);
+  $end = array("1", "1", "1"); 
+  $volume = array("2", "2", "2"); 
+  $balance = array("3", "3", "3"); 
+
+?>
+<!****************************************************>
+
+<div id="header">
+<h1>Stock</h1>
+</div>
+<div id = "out">
+<a href="http://localhost/DB%20UI/login.html"><strong>Log out </strong></a>
+</div>
+<ul>
+
+  <li><a href="http://localhost/DB%20UI/main.html"><strong style="font-size:20px">Main</strong></a></li>  
+</ul>
+
+<>
+<font color = "white">
+<strong style="font-size:40px"> User History  </strong>
+
+<table style = "width: 100%">
+  <tr>
+    <th>Company Ticker</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Volume</th>
+    <th>Balance</th>
+  </tr>
+  <tr>
+    <td><?php echo "$company_array[0]"; ?>
+    <td><?php echo "$start[0]"; ?>
+    <td><?php echo "$end[0]"; ?>
+    <td><?php echo "$volume[0]"; ?>
+    <td><?php echo "$balance[0]"; ?>
+  </tr>
+  <tr>
+    <td><?php echo "$company_array[1]"; ?>
+    <td><?php echo "$start[1]"; ?>
+    <td><?php echo "$end[1]"; ?>
+    <td><?php echo "$volume[1]"; ?>
+    <td><?php echo "$balance[1]"; ?>
+  </tr>
+  <tr>
+    <td><?php echo "$company_array[2]"; ?>
+    <td><?php echo "$start[2]"; ?>
+    <td><?php echo "$end[2]"; ?>
+    <td><?php echo "$volume[2]"; ?>
+    <td><?php echo "$balance[2]"; ?>
+  </tr>
+</table>
+
+</body>
+</html>

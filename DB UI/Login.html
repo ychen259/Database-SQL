@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+#section {
+    width:350px;
+    padding:10px;	 
+    text-color : purple;	 
+}
+
+#new_account{
+    position: absolute;
+    top: 250px;
+    left: 20px;
+}
+#nav {
+    position: absolute;
+    left:500px;
+    top:150px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="header">
+<h1>Stock</h1>
+</div>
+
+
+<div id="section">
+<form action="http://localhost/Login.php" method ="post">
+User name:<br>
+<input type="text" name="user">
+<br>
+Password:<br>
+<input type="password" name="password">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+</div>
+
+<div id="new_account">
+<form action="http://localhost/GoToregister.php" method ="post">
+<input type="submit" value="New Account">
+</form> 
+</div>
+
+<div id="nav">
+<img src ="http://moneycontrolinvestments.com/wp-content/uploads/2015/08/stocks.jpg">
+<div>
+
+</body>
+</html>

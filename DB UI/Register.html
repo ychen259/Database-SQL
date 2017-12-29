@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#section {
+    width:100px;
+    padding:10px;	
+    position: absolute;
+    left: 500px;
+    top: 80px; 	 
+}
+#nav {
+    position: absolute;
+    left:510px;
+    top:470px;
+}
+h.serif{
+    font-family: "Times New Roman", Times, serif;
+}
+</style>
+</head>
+<body>
+<body>
+
+<div id="header">
+<h1>Stock</h1>
+</div>
+<div id="section">
+<h1> Register </h1> 
+<form action="http://localhost/register.php" method ="post">
+
+	      Username: <br>
+	      <input type = "text" name = "username">
+<br>
+	      Password: <br>
+	      <input type = "password" name = "password">
+<br>
+	      Password again: <br>
+	      <input type = "password" name = "password_again">
+<br>
+	      First name: <br>
+	      <input type = "text" name = "first_name">
+<br>
+	      Last name: <br>
+	      <input type = "text" name = "last_name">
+<br>
+	      Email: <br>
+	      <input type = "text" name = "email">
+<br><br>
+	      <input type = "submit" name = "Submit">
+
+</form>
+</div>
+
+<div id="nav">
+<form action="http://localhost/GotoLogin.php" method ="post">
+<input type = "submit" value = "Back to Login">
+</form>
+</div>
+
+</body>
+</html>
